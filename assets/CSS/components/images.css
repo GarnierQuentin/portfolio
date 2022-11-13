@@ -1,0 +1,36 @@
+.image{
+    width: 25%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-projet{
+    width:50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-projet img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-caroussel{
+    object-fit: cover !important;
+    height: 40vw !important;
+}
+
+@media (max-width: 810px) {
+    .image{
+        width: 25%;
+        height: 25%;
+    }
+}

@@ -1,0 +1,38 @@
+a{
+    color: black;
+}
+
+.a:hover{
+    cursor: pointer !important;
+}
+
+a:visited{
+    color: black;
+}
+
+.lien-iim{
+    text-decoration: underline !important;
+}
+
+.lien-iim:hover{
+    color: orange !important;
+}
+
+.lien-image{
+    width: 25%;
+    height: 25%;
+    margin-bottom: 20px;
+}
+
+.lien-image:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.lien-projet{
+    text-decoration: underline !important;
+}
+
+.lien-projet:hover{
+    color: blue !important;
+}

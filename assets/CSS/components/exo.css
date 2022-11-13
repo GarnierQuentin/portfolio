@@ -1,0 +1,16 @@
+.flex-container {
+    display:flex;
+    padding-top: 60px;
+}
+
+#intro-img{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 40%;
+}
+
+.cards-container{
+    flex-grow: 1;
+    padding: 5rem;
+}

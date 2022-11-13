@@ -1,0 +1,100 @@
+.btn-demo{
+    text-transform: uppercase;
+    border-radius: 999999px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 100%;
+    color: white;
+    animation: changing-color 3s infinite !important;
+}
+
+@keyframes changing-color {
+    0% {
+        background-color: black;
+        color: white;
+    }
+    50% {
+        background-color: grey;
+        color: black;
+    }
+
+    100% {
+        background-color: black;
+        color: white;
+    }
+
+}
+
+.btn-rec{
+    background-color: grey;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    animation: changing-size 3s infinite;
+}
+
+@keyframes changing-size {
+    0%{
+        transform: scale(1,1);
+    }
+    25%{
+        transform: scale(1,1.5);
+    }
+    50%{
+        transform: scale(1,1);
+    }
+
+    75%{
+        transform: scale(1.25,1);
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+    
+}
+
+.btn-rec:hover{
+    background-color: black;
+    color: #ffffff !important;
+}
+
+
+.btn-big{
+    background-color: grey;
+    text-transform: uppercase;
+    border-radius: 999999px;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.2s ease-in;
+}
+
+.btn-big:hover{
+    transform: scale(1.2);
+    transition: 0.2s ease-out;
+    background-color: black;
+    color: white !important;
+}
+
+.liens-btns{
+    margin-top: 50px;
+    display: flex;
+    gap: 5rem;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+@media (max-width: 810px) {
+    .liens-btns{
+        flex-direction: column;
+        align-items: center;
+    }
+}

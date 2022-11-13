@@ -1,0 +1,123 @@
+.cards-3{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.cards-2{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    gap: 1rem;
+    padding: 20px;
+    height: 300px;
+    background-color: white;
+    width: 20vw;
+    animation: lightSpeedInLeft 0.75s;
+}
+
+@keyframes lightSpeedInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0) skewX(30deg);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: skewX(-20deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: skewX(5deg);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .lightSpeedInLeft {
+    animation-name: lightSpeedInLeft;
+    animation-timing-function: ease-out;
+  }
+
+.card .card-image{
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+    padding-right: 10px;
+}
+
+.card .card-content {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+}
+  
+.card .card-title {
+    font-weight: 700;
+}
+
+.lien-card{
+    animation: contre-rotation 1s;
+}
+
+.lien-card:hover{
+    animation: rotation 1s;
+}
+
+@keyframes contre-rotation {
+    25%{
+        transform: rotate(-10deg);
+    }
+
+    75%{
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes rotation {
+    25%{
+        transform: rotate(10deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+}
+
+@media (max-width: 810px) {
+    .cards-3{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        margin-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+    }
+
+    .cards-2{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        margin-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+    }
+
+    .card{
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

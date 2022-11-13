@@ -1,0 +1,49 @@
+.main-container{
+  padding-top: 100px !important;
+  position: relative;
+  margin-bottom: 6%;
+
+}
+
+/* Container avec une taille qui prend tout l'écran */
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Container avec une taille qui prend la moitié de l'écran */
+.container-mid{
+  width: 50%;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 0 0rem;
+}
+
+/* Container avec une taille fixe */
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-accueil{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 810px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-accueil{
+    display: flex;
+    flex-direction: row;
+  }
+}

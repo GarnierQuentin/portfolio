@@ -1,0 +1,27 @@
+.section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1{
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.section-1 .content-image{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-1 .content-text{
+    width: 100%;
+}
+
+.section-2{
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
